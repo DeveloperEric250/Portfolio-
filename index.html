@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nsabimana Eric – IT Year 3 Student at University of Rwanda & Trainee at SolvitAfrica. Portfolio showcasing projects, skills, and experience." />
+  <title>Nsabimana Eric </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== CURSOR GLOW ===== -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-bracket">&lt;</span>Eric<span class="logo-dot">.</span><span class="logo-bracket">/&gt;</span>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" id="nav-home">Home</a></li>
+        <li><a href="#projects" class="nav-link" id="nav-projects">Projects</a></li>
+        <li><a href="#skills" class="nav-link" id="nav-skills">Skills</a></li>
+        <li><a href="#testimonials" class="nav-link" id="nav-testimonials">Testimonials</a></li>
+        <li><a href="#contact" class="nav-link" id="nav-contact">Get In Touch</a></li>
+      </ul>
+
+      <div class="nav-socials">
+        <a href="https://www.linkedin.com/in/eric250" target="_blank" id="nav-linkedin" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/" target="_blank" id="nav-github" aria-label="GitHub" class="social-icon"><i class="fab fa-github"></i></a>
+        <a href="mailto:ericnsabimana2001@gmail.com" id="nav-email" aria-label="Email" class="social-icon"><i class="fas fa-envelope"></i></a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-container">
+      <div class="hero-text" id="heroText">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Nsabimana<br /><span class="name-highlight">Eric</span></h1>
+        <div class="hero-tags">
+          <span class="tag" id="tag1">IT Student</span>
+          <span class="tag" id="tag2">Backend Developer</span>
+          <span class="tag" id="tag3">Problem Solver</span>
+        </div>
+        <p class="hero-bio">
+          IT student at <strong>University of Rwanda</strong>, graduating in 
+          <strong>2028</strong> · trained at 
+          <strong class="highlight-green">SolvitAfrica</strong>. Passionate about building 
+          modern web applications, backend systems, and tech solutions for Rwanda and the world.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary" id="cta-projects">Let's get started &gt;</a>
+          <a href="#contact" class="btn-secondary" id="cta-contact">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-image" id="heroImage">
+        <div class="image-ring">
+          <div class="image-ring-inner">
+            <img src="eric.jpg" alt="Nsabimana Eric – IT Student" class="profile-photo" id="profilePhoto" />
+          </div>
+        </div>
+        <div class="floating-badge badge-top" id="badge1">
+          <i class="fas fa-code"></i> Python · Django
+        </div>
+        <div class="floating-badge badge-bottom" id="badge2">
+          <i class="fas fa-graduation-cap"></i> UR · Year 3
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="scroll-hint" id="scrollHint">
+      <span>Scroll</span>
+      <div class="scroll-line"><div class="scroll-dot"></div></div>
+    </div>
+  </section>
+
+  <!-- ===== TRAINED WITH SECTION ===== -->
+  <section class="worked-with" id="worked-with">
+    <div class="section-container">
+      <p class="worked-label">Trained & Studied With</p>
+      <div class="logos-track" id="logosTrack">
+        <div class="logo-item"><img src="ur-logo.jpg" alt="University of Rwanda" class="org-logo" /></div>
+        <div class="logo-item"><img src="solvit-logo.png" alt="SolvitAfrica" class="org-logo" /></div>
+        <div class="logo-item"><i class="fab fa-python"></i> Python</div>
+        <div class="logo-item"><i class="fas fa-database"></i> Django REST</div>
+        <div class="logo-item"><i class="fab fa-git-alt"></i> Git & GitHub</div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="section" id="projects">
+    <div class="section-container">
+      <div class="section-header">
+        <p class="section-label">My Work</p>
+        <h2 class="section-title">Featured <span class="highlight-green">Projects</span></h2>
+        <p class="section-subtitle">A selection of real projects I've built during my studies and training at SolvitAfrica.</p>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <div class="project-card" id="project1">
+          <div class="project-icon"><i class="fas fa-map-marked-alt"></i></div>
+          <div class="project-tag">Django REST API</div>
+          <h3 class="project-title">Muraho Rwanda Discovery</h3>
+          <p class="project-desc">
+            A full-featured Rwanda Discovery App backend with JWT authentication, 
+            role-based permissions, spatial filtering, and DRF view patterns. Built to 
+            support tourism exploration across Rwanda.
+          </p>
+          <div class="project-tech">
+            <span>Django</span><span>DRF</span><span>PostgreSQL</span><span>JWT</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/" target="_blank" class="project-link" id="proj1-github"><i class="fab fa-github"></i> Code</a>
+            <a href="#" class="project-link project-link-demo" id="proj1-demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card" id="project2">
+          <div class="project-icon"><i class="fas fa-shopping-cart"></i></div>
+          <div class="project-tag">E-Commerce</div>
+          <h3 class="project-title">Rwanda Marketplace</h3>
+          <p class="project-desc">
+            A simple Django-based online marketplace allowing users to list and browse
+            products. Includes user authentication, product listing, and basic admin management.
+          </p>
+          <div class="project-tech">
+            <span>Django</span><span>Python</span><span>HTML/CSS</span><span>SQLite</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/" target="_blank" class="project-link" id="proj2-github"><i class="fab fa-github"></i> Code</a>
+            <a href="#" class="project-link project-link-demo" id="proj2-demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card" id="project3">
+          <div class="project-icon"><i class="fas fa-school"></i></div>
+          <div class="project-tag">Management System</div>
+          <h3 class="project-title">School Management System</h3>
+          <p class="project-desc">
+            A Django-based School Management System with models for students, departments, 
+            lecturers, and assets. Includes Django admin interface and shell-based data management.
+          </p>
+          <div class="project-tech">
+            <span>Django</span><span>Python</span><span>Django Admin</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/" target="_blank" class="project-link" id="proj3-github"><i class="fab fa-github"></i> Code</a>
+            <a href="#" class="project-link project-link-demo" id="proj3-demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card" id="project4">
+          <div class="project-icon"><i class="fas fa-motorcycle"></i></div>
+          <div class="project-tag">Transport App</div>
+          <h3 class="project-title">SafeBoda Kigali</h3>
+          <p class="project-desc">
+            Designed and initialized the SafeBoda Kigali ride-hailing project, modelling 
+            the system using ERD and setting up the foundational Django project structure.
+          </p>
+          <div class="project-tech">
+            <span>Django</span><span>ERD</span><span>Python</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/" target="_blank" class="project-link" id="proj4-github"><i class="fab fa-github"></i> Code</a>
+            <a href="#" class="project-link project-link-demo" id="proj4-demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="section section-dark" id="skills">
+    <div class="section-container">
+      <div class="section-header">
+        <p class="section-label">What I Know</p>
+        <h2 class="section-title">My <span class="highlight-green">Skills</span></h2>
+        <p class="section-subtitle">Technologies and tools I work with in my studies and training.</p>
+      </div>
+
+      <div class="skills-grid" id="skillsGrid">
+        <div class="skill-category" id="skill-cat1">
+          <h3><i class="fas fa-code"></i> Languages</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info"><span>Python</span><span>85%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>HTML & CSS</span><span>90%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>SQL</span><span>75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category" id="skill-cat2">
+          <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info"><span>Django</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Django REST Framework</span><span>75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Bootstrap</span><span>70%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category" id="skill-cat3">
+          <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info"><span>Git & GitHub</span><span>78%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>PostgreSQL</span><span>70%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>VS Code</span><span>88%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category" id="skill-cat4">
+          <h3><i class="fas fa-brain"></i> Concepts</h3>
+          <div class="skill-items">
+            <div class="skill-item">
+              <div class="skill-info"><span>REST APIs</span><span>80%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>OOP</span><span>75%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Database Design</span><span>72%</span></div>
+              <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== CERTIFICATES SUBSECTION ===== -->
+      <div class="certificates-section" id="certificates">
+        <div class="section-header" style="margin-top: 64px; margin-bottom: 40px;">
+          <p class="section-label">Achievements</p>
+          <h2 class="section-title">My <span class="highlight-green">Certificates</span></h2>
+          <p class="section-subtitle">Certifications earned through my studies and training at SolvitAfrica.</p>
+        </div>
+        <div class="certs-grid" id="certsGrid">
+
+          <div class="cert-card" id="cert1">
+            <div class="cert-icon"><i class="fas fa-award"></i></div>
+            <div class="cert-body">
+              <span class="cert-issuer">SolvitAfrica Training Center</span>
+              <h3 class="cert-title">Backend Web Development with Django</h3>
+              <p class="cert-desc">Completed an intensive training program covering Django, Django REST Framework, JWT authentication, PostgreSQL, and API development.</p>
+              <div class="cert-meta">
+                <span class="cert-date"><i class="fas fa-calendar-alt"></i> 2024 – 2025</span>
+                <span class="cert-badge cert-badge-green">Completed</span>
+              </div>
+              <a href="certificates/django-backend-cert.pdf" target="_blank" class="cert-view-btn" id="cert1-view">
+                <i class="fas fa-eye"></i> View Certificate
+              </a>
+            </div>
+          </div>
+
+          <div class="cert-card" id="cert2">
+            <div class="cert-icon"><i class="fas fa-university"></i></div>
+            <div class="cert-body">
+              <span class="cert-issuer">University of Rwanda – IT Department</span>
+              <h3 class="cert-title">Information Technology – Year 3</h3>
+              <p class="cert-desc">Pursuing a Bachelor's degree in Information Technology with focus on software engineering, databases, networking, and web development.</p>
+              <div class="cert-meta">
+                <span class="cert-date"><i class="fas fa-calendar-alt"></i> 2022 – Present</span>
+                <span class="cert-badge cert-badge-blue">In Progress</span>
+              </div>
+              <a href="certificates/ur-enrollment.pdf" target="_blank" class="cert-view-btn" id="cert2-view">
+                <i class="fas fa-eye"></i> View Certificate
+              </a>
+            </div>
+          </div>
+
+          <div class="cert-card" id="cert3">
+            <div class="cert-icon"><i class="fas fa-code"></i></div>
+            <div class="cert-body">
+              <span class="cert-issuer">SolvitAfrica Training Center</span>
+              <h3 class="cert-title">Python Programming &amp; OOP</h3>
+              <p class="cert-desc">Mastered Python fundamentals including object-oriented programming, data structures, file handling, and scripting for automation.</p>
+              <div class="cert-meta">
+                <span class="cert-date"><i class="fas fa-calendar-alt"></i> 2024</span>
+                <span class="cert-badge cert-badge-green">Completed</span>
+              </div>
+              <a href="certificates/python-oop-cert.pdf" target="_blank" class="cert-view-btn" id="cert3-view">
+                <i class="fas fa-eye"></i> View Certificate
+              </a>
+            </div>
+          </div>
+
+          <div class="cert-card" id="cert4">
+            <div class="cert-icon"><i class="fas fa-database"></i></div>
+            <div class="cert-body">
+              <span class="cert-issuer">SolvitAfrica Training Center</span>
+              <h3 class="cert-title">Database Design &amp; PostgreSQL</h3>
+              <p class="cert-desc">Learned relational database design, ERD modelling, SQL queries, and PostgreSQL integration with Django backend applications.</p>
+              <div class="cert-meta">
+                <span class="cert-date"><i class="fas fa-calendar-alt"></i> 2024</span>
+                <span class="cert-badge cert-badge-green">Completed</span>
+              </div>
+              <a href="certificates/database-postgresql-cert.pdf" target="_blank" class="cert-view-btn" id="cert4-view">
+                <i class="fas fa-eye"></i> View Certificate
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Add Certificate Button -->
+        <div style="text-align:center; margin-top: 36px;">
+          <button class="add-cert-btn" id="openCertModal">
+            <i class="fas fa-plus-circle"></i> Add New Certificate
+          </button>
+        </div>
+
+      </div>
+      <!-- ===== END CERTIFICATES ===== -->
+
+      <!-- ===== CERTIFICATE UPLOAD MODAL ===== -->
+      <div class="cert-modal-overlay" id="certModalOverlay">
+        <div class="cert-modal" id="certModal">
+          <div class="cert-modal-header">
+            <h3><i class="fas fa-certificate"></i> Add New Certificate</h3>
+            <button class="cert-modal-close" id="closeCertModal"><i class="fas fa-times"></i></button>
+          </div>
+          <form class="cert-modal-form" id="certUploadForm" novalidate>
+
+            <div class="cert-form-group">
+              <label for="certTitle">Certificate Title *</label>
+              <input type="text" id="certTitle" placeholder="e.g. Python for Beginners" required />
+            </div>
+
+            <div class="cert-form-group">
+              <label for="certIssuer">Issued By *</label>
+              <input type="text" id="certIssuer" placeholder="e.g. SolvitAfrica Training Center" required />
+            </div>
+
+            <div class="cert-form-row">
+              <div class="cert-form-group">
+                <label for="certYear">Year</label>
+                <input type="text" id="certYear" placeholder="e.g. 2024" />
+              </div>
+              <div class="cert-form-group">
+                <label for="certStatus">Status</label>
+                <select id="certStatus">
+                  <option value="completed">Completed</option>
+                  <option value="inprogress">In Progress</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="cert-form-group">
+              <label for="certDesc">Description (optional)</label>
+              <textarea id="certDesc" rows="3" placeholder="What did you learn or achieve?"></textarea>
+            </div>
+
+            <div class="cert-form-group">
+              <label>Certificate File (PDF or Image)</label>
+              <label class="cert-file-upload" for="certFile">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <span id="certFileLabel">Click to choose file from your device</span>
+                <input type="file" id="certFile" accept=".pdf,.jpg,.jpeg,.png" />
+              </label>
+            </div>
+
+            <div class="cert-modal-actions">
+              <button type="button" class="cert-cancel-btn" id="cancelCertModal">Cancel</button>
+              <button type="submit" class="cert-save-btn" id="saveCertBtn">
+                <i class="fas fa-save"></i> Save Certificate
+              </button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+      <!-- ===== END MODAL ===== -->
+
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS SECTION ===== -->
+  <section class="section" id="testimonials">
+    <div class="section-container">
+      <div class="section-header">
+        <p class="section-label">What People Say</p>
+        <h2 class="section-title">Testi<span class="highlight-green">monials</span></h2>
+      </div>
+
+      <div class="testimonials-wrapper">
+        <div class="testimonials-slider" id="testimonialsSlider">
+
+          <div class="testimonial-card active" id="testi1">
+            <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+            <p class="testi-text">
+              "Eric is one of the most hardworking students I've studied alongside at the University of Rwanda.
+              He always goes the extra mile — whether it's debugging late at night or helping teammates
+              understand backend concepts. Graduating together in 2028 will be a proud moment."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar"><i class="fas fa-user-graduate"></i></div>
+              <div class="testi-info">
+                <strong>Classmate &amp; Study Partner</strong>
+                <span>University of Rwanda – IT Year 3</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" id="testi2">
+            <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+            <p class="testi-text">
+              "During training at SolvitAfrica, Eric stood out as someone who truly loves what he does.
+              He picks up new concepts fast and is always eager to build real things.
+              His Django projects during training were genuinely impressive."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar"><i class="fas fa-laptop-code"></i></div>
+              <div class="testi-info">
+                <strong>Fellow Trainee – Backend Developer</strong>
+                <span>SolvitAfrica Training Center</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" id="testi3">
+            <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+            <p class="testi-text">
+              "I worked with Eric on our group projects at UR and SolvitAfrica — he was the backbone of our backend team.
+              He takes ownership, writes clean code, and never leaves a teammate behind.
+              Can't wait to see what he builds after we graduate in 2028."
+            </p>
+            <div class="testi-author">
+              <div class="testi-avatar"><i class="fas fa-users"></i></div>
+              <div class="testi-info">
+                <strong>Project Teammate</strong>
+                <span>University of Rwanda – IT Dept.</span>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="testi-controls">
+          <button class="testi-btn" id="testiPrev" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+          <div class="testi-dots" id="testiDots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+          </div>
+          <button class="testi-btn" id="testiNext" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT STATS SECTION ===== -->
+  <section class="section section-dark" id="about">
+    <div class="section-container">
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="section-label">About Me</p>
+          <h2 class="section-title">Turning Ideas Into<br /><span class="highlight-green">Digital Reality</span></h2>
+          <p class="about-bio">
+            I'm Nsabimana Eric, a passionate IT student in Year 3 at the <strong>University of Rwanda</strong>. 
+            I specialize in backend development using Python and Django, and I'm currently expanding my full-stack 
+            capabilities during my professional training at <strong class="highlight-green">SolvitAfrica</strong>.
+          </p>
+          <p class="about-bio">
+            My goal is to build tech solutions that have real impact across Africa — from marketplace platforms to 
+            tourism apps and beyond. I believe in writing clean, maintainable code and constantly pushing my 
+            technical boundaries.
+          </p>
+          <a href="https://www.linkedin.com/in/eric250" target="_blank" class="btn-primary" id="about-linkedin">
+            <i class="fab fa-linkedin-in"></i> View LinkedIn Profile
+          </a>
+        </div>
+
+        <div class="stats-grid" id="statsGrid">
+          <div class="stat-card" id="stat1">
+            <div class="stat-number" data-count="4">0</div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-card" id="stat2">
+            <div class="stat-number" data-count="3">0</div>
+            <div class="stat-label">Years of Study</div>
+          </div>
+          <div class="stat-card" id="stat3">
+            <div class="stat-number" data-count="6">0</div>
+            <div class="stat-label">Technologies</div>
+          </div>
+          <div class="stat-card" id="stat4">
+            <div class="stat-number" data-count="100">0</div>
+            <div class="stat-label">% Commitment</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section" id="contact">
+    <div class="section-container">
+      <div class="section-header">
+        <p class="section-label">Let's Connect</p>
+        <h2 class="section-title">Get In <span class="highlight-green">Touch</span></h2>
+        <p class="section-subtitle">Have a project in mind or want to collaborate? Reach out!</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info" id="contactInfo">
+          <div class="contact-item" id="contact-email">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:ericnsabimana2001@gmail.com">ericnsabimana2001@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item" id="contact-phone">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+250789116628">+250 789 116 628</a>
+            </div>
+          </div>
+          <div class="contact-item" id="contact-linkedin">
+            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div>
+              <strong>LinkedIn</strong>
+              <a href="https://www.linkedin.com/in/eric250" target="_blank">linkedin.com/in/eric250</a>
+            </div>
+          </div>
+          <div class="contact-item" id="contact-location">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <strong>Location</strong>
+              <span>Kigali, Rwanda</span>
+            </div>
+          </div>
+          <div class="contact-item" id="contact-edu">
+            <div class="contact-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div>
+              <strong>Education</strong>
+              <span>University of Rwanda – IT (Graduating 2028)</span>
+            </div>
+          </div>
+          <div class="contact-item" id="contact-company">
+            <div class="contact-icon"><i class="fas fa-building"></i></div>
+            <div>
+              <strong>Training At</strong>
+              <span>SolvitAfrica – Training Complete ✓</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-full" id="submitBtn">
+            <span>Send Message</span> <i class="fas fa-paper-plane"></i>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>Eric<span class="logo-dot">.</span><span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-text">© 2025 Nsabimana Eric · IT Student · University of Rwanda · SolvitAfrica Graduate</p>
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/eric250" target="_blank" aria-label="LinkedIn" id="footer-linkedin"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/" target="_blank" aria-label="GitHub" id="footer-github"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
